@@ -1,0 +1,6 @@
+description = "Blah"
+version = "%%VERSION_NUM%%"
+archive(byte) = "use_mod.cma"
+archive(byte,toploop) = "use_mod.cma"
+archive(byte,create_toploop) = "use_mod.cma"
+plugin(byte) = "use_mod.cma"

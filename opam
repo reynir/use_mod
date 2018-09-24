@@ -1,0 +1,17 @@
+opam-version: "1.2"
+maintainer: "Reynir Björnsson <reynir@reynir.dk>"
+author: "Reynir Björnsson <reynir@reynir.dk>"
+dev-repo: "https://github.com/reynir/use_mod.git"
+homepage: "https://github.com/reynir/use_mod/"
+bug-reports:  "https://github.com/reynir/use_mod/issues"
+doc: "https://reynir.github.io/use_mod/"
+license: "BSD-2-clause"
+available: [ ocaml-version > "4.01.0" ]
+build: [
+  "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%"
+]
+depends: [
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "topkg" {build}
+]
